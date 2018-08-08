@@ -1,0 +1,24 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "shalini117",
+  "key": "Jh9MDLDiU2DosqLx9yRj",
+
+  "capabilities": {
+    "build": "testng-browserstack",
+    "name": "parallel_appium_test",
+    "browserstack.debug": true,
+    "app": "bs://e71d50aa4fbdb29a543a40704a4f41b69561e0bd"
+  },
+
+  "environments": {
+    "pixel": {
+      "device": "Google Pixel"
+    },
+    "galaxy_s7": {
+      "device": "Samsung Galaxy S7"
+    },
+    "nexus_9": {
+      "device": "Google Nexus 6"
+    }
+  }
+}

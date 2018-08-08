@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="KevinApp" duration-ms="452143" started-at="2018-08-08T08:04:16Z" finished-at="2018-08-08T08:11:48Z">
+    <groups>
+    </groups>
+    <test name="TestGalaxyNote4" duration-ms="452143" started-at="2018-08-08T08:04:16Z" finished-at="2018-08-08T08:11:48Z">
+      <class name="com.browserstack.suite.SuiteAddARecurrentPay">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.suite.SuiteAddARecurrentPay@35f983a6]" name="setUp" is-config="true" duration-ms="54258" started-at="2018-08-08T13:34:16Z" finished-at="2018-08-08T13:35:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[suite.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[galaxy_note4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test_01()[pri:0, instance:com.browserstack.suite.SuiteAddARecurrentPay@35f983a6]" name="test_01" duration-ms="155937" started-at="2018-08-08T13:35:11Z" finished-at="2018-08-08T13:37:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.browserstack.suite.SuiteAddARecurrentPay@35f983a6]" name="tearDown" is-config="true" duration-ms="11573" started-at="2018-08-08T13:37:46Z" finished-at="2018-08-08T13:37:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.browserstack.suite.SuiteAddARecurrentPay -->
+      <class name="com.browserstack.suite.SuiteAddABill">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.suite.SuiteAddABill@6442b0a6]" name="setUp" is-config="true" duration-ms="56431" started-at="2018-08-08T13:37:58Z" finished-at="2018-08-08T13:38:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[suite.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[galaxy_note4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test_01()[pri:1, instance:com.browserstack.suite.SuiteAddABill@6442b0a6]" name="test_01" duration-ms="162536" started-at="2018-08-08T13:38:54Z" finished-at="2018-08-08T13:41:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.browserstack.suite.SuiteAddABill@6442b0a6]" name="tearDown" is-config="true" duration-ms="11378" started-at="2018-08-08T13:41:37Z" finished-at="2018-08-08T13:41:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.browserstack.suite.SuiteAddABill -->
+      <class name="com.browserstack.suite.SuiteAddABillAndAPay">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.suite.SuiteAddABillAndAPay@60f82f98]" name="setUp" is-config="true" duration-ms="55327" started-at="2018-08-08T13:34:16Z" finished-at="2018-08-08T13:35:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[suite.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[galaxy_note4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test_01()[pri:0, instance:com.browserstack.suite.SuiteAddABillAndAPay@60f82f98]" name="test_01" duration-ms="180026" started-at="2018-08-08T13:35:12Z" finished-at="2018-08-08T13:38:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.browserstack.suite.SuiteAddABillAndAPay@60f82f98]" name="tearDown" is-config="true" duration-ms="11380" started-at="2018-08-08T13:38:12Z" finished-at="2018-08-08T13:38:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.browserstack.suite.SuiteAddABillAndAPay -->
+      <class name="com.browserstack.suite.SuiteAddGoals">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.suite.SuiteAddGoals@7f690630]" name="setUp" is-config="true" duration-ms="54572" started-at="2018-08-08T13:34:16Z" finished-at="2018-08-08T13:35:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[suite.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[galaxy_note4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test_01()[pri:0, instance:com.browserstack.suite.SuiteAddGoals@7f690630]" name="test_01" duration-ms="172523" started-at="2018-08-08T13:35:11Z" finished-at="2018-08-08T13:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.browserstack.suite.SuiteAddGoals@7f690630]" name="tearDown" is-config="true" duration-ms="11285" started-at="2018-08-08T13:38:03Z" finished-at="2018-08-08T13:38:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.browserstack.suite.SuiteAddGoals -->
+    </test> <!-- TestGalaxyNote4 -->
+  </suite> <!-- KevinApp -->
+</testng-results>

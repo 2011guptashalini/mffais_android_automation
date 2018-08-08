@@ -1,0 +1,18 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "shalini117",
+  "key": "Jh9MDLDiU2DosqLx9yRj",
+
+  "capabilities": {
+    "build": "testng-browserstack",
+    "name": "single_appium_test",
+    "browserstack.debug": true,
+    "app": "bs://e71d50aa4fbdb29a543a40704a4f41b69561e0bd"
+  },
+
+  "environments": {
+    "pixel": {
+      "device": "Google Pixel"
+    }
+  }
+}

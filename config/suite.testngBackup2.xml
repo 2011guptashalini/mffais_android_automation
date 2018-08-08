@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="KevinApp" parallel="tests">
+    <test name="TestGalaxy8" thread-count="3" parallel="classes">
+        <parameter name="config" value="suite.conf.json"/>
+        <parameter name="environment" value="galaxy_s8"/>
+        <classes>
+            <class name="com.browserstack.suite.SuiteAddABill"/>
+            <class name="com.browserstack.suite.SuiteAddMultipleBills"/>
+             <class name="com.browserstack.suite.SuiteAddABillAndAPay"/>
+             <class name="com.browserstack.suite.SuiteAddARecurrentPay"/>
+         </classes>
+        </test>
+        
+    <test name="TestGalaxy7" thread-count="3" parallel="classes">
+        <parameter name="config" value="suite.conf.json"/>
+        <parameter name="environment" value="galaxy_s7"/>
+        <classes>
+            <class name="com.browserstack.suite.SuiteAddABill"/>
+            <class name="com.browserstack.suite.SuiteAddMultipleBills"/>
+             <class name="com.browserstack.suite.SuiteAddABillAndAPay"/>
+             <class name="com.browserstack.suite.SuiteAddARecurrentPay"/>
+        </classes>
+        </test>
+        
+    <test name="TestGalaxyNote4" thread-count="3" parallel="classes">
+        <parameter name="config" value="suite.conf.json"/>
+        <parameter name="environment" value="galaxy_note4"/>
+        <classes>
+            <class name="com.browserstack.suite.SuiteAddABill"/>
+            <class name="com.browserstack.suite.SuiteAddMultipleBills"/>
+             <class name="com.browserstack.suite.SuiteAddABillAndAPay"/>
+             <class name="com.browserstack.suite.SuiteAddARecurrentPay"/>
+        </classes>
+        </test>
+   </suite>

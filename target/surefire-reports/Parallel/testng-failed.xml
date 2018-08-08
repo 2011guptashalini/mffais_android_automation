@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Parallel]" parallel="tests">
+  <parameter name="environment" value="nexus_6"/>
+  <parameter name="config" value="parallel.conf.json"/>
+  <test name="SingleTestPixel">
+    <parameter name="environment" value="pixel"/>
+    <parameter name="config" value="parallel.conf.json"/>
+    <classes>
+      <class name="com.browserstack.SingleTest"/>
+    </classes>
+  </test> <!-- SingleTestPixel -->
+  <test name="SingleTestGalaxyS7">
+    <parameter name="environment" value="galaxy_s7"/>
+    <parameter name="config" value="parallel.conf.json"/>
+    <classes>
+      <class name="com.browserstack.SingleTest"/>
+    </classes>
+  </test> <!-- SingleTestGalaxyS7 -->
+  <test name="SingleTestNexus6">
+    <parameter name="environment" value="nexus_6"/>
+    <parameter name="config" value="parallel.conf.json"/>
+    <classes>
+      <class name="com.browserstack.SingleTest"/>
+    </classes>
+  </test> <!-- SingleTestNexus6 -->
+  <test name="SingleTestNexus6(failed)" parallel="tests">
+    <parameter name="environment" value="nexus_6"/>
+    <parameter name="config" value="parallel.conf.json"/>
+    <classes>
+      <class name="com.browserstack.SingleTest">
+        <methods>
+          <include name="test"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.SingleTest -->
+    </classes>
+  </test> <!-- SingleTestNexus6(failed) -->
+  <test name="SingleTestGalaxyS7(failed)" parallel="tests">
+    <parameter name="environment" value="galaxy_s7"/>
+    <parameter name="config" value="parallel.conf.json"/>
+    <classes>
+      <class name="com.browserstack.SingleTest">
+        <methods>
+          <include name="test"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.SingleTest -->
+    </classes>
+  </test> <!-- SingleTestGalaxyS7(failed) -->
+  <test name="SingleTestPixel(failed)" parallel="tests">
+    <parameter name="environment" value="pixel"/>
+    <parameter name="config" value="parallel.conf.json"/>
+    <classes>
+      <class name="com.browserstack.SingleTest">
+        <methods>
+          <include name="test"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.SingleTest -->
+    </classes>
+  </test> <!-- SingleTestPixel(failed) -->
+</suite> <!-- Failed suite [Parallel] -->

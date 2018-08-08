@@ -1,0 +1,112 @@
+package com.browserstack.suite;
+
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
+
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import java.net.URL;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import com.browserstack.BrowserStackTestNGTest;
+
+public class SuiteAddMultipleBills extends BrowserStackTestNGTest {
+	
+ 
+    @Test
+    public void test_01() throws Exception {
+    	        
+        dr.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Get Started\")").click();
+        Thread.sleep(15000); 
+       // Thread.sleep(15000); 
+        Thread.sleep(15000); 
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter Name\")").click();
+        Thread.sleep(5000);
+        
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter Name\")").sendKeys("testtest");
+        Thread.sleep(5000);
+        //dr.hideKeyboard();
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Next\")").click();
+        dr.findElementByAndroidUIAutomator("UiSelector().className(\"android.widget.EditText\")").sendKeys("200");
+        Thread.sleep(15000); 
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Next\")").click();
+        //Thread.sleep(5000);
+        Thread.sleep(15000); 
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Next\")").click();
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Add Bill\")").click();
+        Thread.sleep(5000);
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter payee name\")").click();
+                 //dr.findElementByAndroidUIAutomator("UiSelector().index(3)").sendKeys("aaa");
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter payee name\")").sendKeys("aaa");
+        sKeyboard();
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter amount\")").click();
+        //dr.findElementByAndroidUIAutomator("UiSelector().index(3)").sendKeys("aaa");
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter amount\")").sendKeys("19.7");
+
+        //dr.findElementByAndroidUIAutomator("UiSelector().index(5)").sendKeys("19.6");
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Add\")").click();
+        Thread.sleep(5000);
+        Thread.sleep(5000);
+        
+        // Adding second time
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Add Bill\")").click();
+        Thread.sleep(5000);
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter payee name\")").click();
+                 //dr.findElementByAndroidUIAutomator("UiSelector().index(3)").sendKeys("aaa");
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter payee name\")").sendKeys("bbb");
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter amount\")").click();
+        //dr.findElementByAndroidUIAutomator("UiSelector().index(3)").sendKeys("aaa");
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter amount\")").sendKeys("9.2");
+
+        //dr.findElementByAndroidUIAutomator("UiSelector().index(5)").sendKeys("19.6");
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Add\")").click();
+        Thread.sleep(5000);
+        Thread.sleep(5000);
+        
+        //Add third time
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Add Bill\")").click();
+        Thread.sleep(5000);
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter payee name\")").click();
+                 
+        Thread.sleep(5000); 
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter payee name\")").sendKeys("ccc");
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter amount\")").click();
+        
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter amount\")").sendKeys("0.2");
+
+     
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Add\")").click();
+        Thread.sleep(5000);
+        Thread.sleep(5000);
+
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Next\")").click();
+        Thread.sleep(5000);
+        Boolean avlbal = dr.findElementByAndroidUIAutomator("UiSelector().text(\"$169.00\")").isDisplayed();
+        Assert.assertTrue(avlbal,"Available balance is not correct");
+        System.out.println("Available balance is correct");
+  	  //System.out.println("Available balance is correct");
+        Boolean saving = dr.findElementByAndroidUIAutomator("UiSelector().text(\"$1.90\")").isDisplayed();
+        Assert.assertTrue(saving,"Saving is not correct");
+        System.out.println("Saving is correct");
+	}
+   
+}
