@@ -12,6 +12,127 @@ import com.browserstack.BrowserStackTestNGTest;
 
 public class AppKeyWords extends BrowserStackTestNGTest {
 	
+public void addMultipleBill(String addAccountBal, String addBillAmount1, String addBillAmount2,String addBillAmount3) throws Exception {
+        
+    	dr.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Thread.sleep(15000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Get Started\")").click();
+        Thread.sleep(15000); 
+        Thread.sleep(15000); 
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter Name\")").click();
+        Thread.sleep(5000);
+        
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter Name\")").sendKeys("testtest");
+        Thread.sleep(5000);
+        if(dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Next\")").isDisplayed())
+        {
+      	  dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Next\")").click();
+      	  Thread.sleep(5000);
+        }
+        else{
+      	  dr.hideKeyboard();
+      	  Thread.sleep(5000);
+        }
+        dr.findElementByAndroidUIAutomator("UiSelector().className(\"android.widget.EditText\")").sendKeys(addAccountBal);
+        Thread.sleep(15000); 
+        //dr.hideKeyboard();
+        if(dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Next\")").isDisplayed())
+        {
+      	  dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Next\")").click();
+      	  Thread.sleep(5000);
+        }
+        else{
+      	  dr.hideKeyboard();
+      	  Thread.sleep(5000);
+        }
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Next\")").click();
+       
+        Thread.sleep(15000); 
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Add Bill\")").click();
+        Thread.sleep(5000);
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter payee name\")").click();
+                 //dr.findElementByAndroidUIAutomator("UiSelector().index(3)").sendKeys("aaa");
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter payee name\")").sendKeys("aaa");
+        //dr.hideKeyboard();
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter amount\")").click();
+        //dr.findElementByAndroidUIAutomator("UiSelector().index(3)").sendKeys("aaa");
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter amount\")").sendKeys(addBillAmount1);
+
+        //dr.findElementByAndroidUIAutomator("UiSelector().index(5)").sendKeys("19.6");
+        Thread.sleep(5000);
+       // dr.hideKeyboard();
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Add\")").click();
+        Thread.sleep(5000);
+      // Adding another bill
+        Thread.sleep(15000); 
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Add Bill\")").click();
+        Thread.sleep(5000);
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter payee name\")").click();
+                 //dr.findElementByAndroidUIAutomator("UiSelector().index(3)").sendKeys("aaa");
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter payee name\")").sendKeys("bbb");
+        //dr.hideKeyboard();
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter amount\")").click();
+        //dr.findElementByAndroidUIAutomator("UiSelector().index(3)").sendKeys("aaa");
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter amount\")").sendKeys(addBillAmount2);
+
+        //dr.findElementByAndroidUIAutomator("UiSelector().index(5)").sendKeys("19.6");
+        Thread.sleep(5000);
+       // dr.hideKeyboard();
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Add\")").click();
+        Thread.sleep(5000);
+        
+        // adding third bill
+        Thread.sleep(15000); 
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Add Bill\")").click();
+        Thread.sleep(5000);
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter payee name\")").click();
+                 //dr.findElementByAndroidUIAutomator("UiSelector().index(3)").sendKeys("aaa");
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter payee name\")").sendKeys("ccc");
+        //dr.hideKeyboard();
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter amount\")").click();
+        //dr.findElementByAndroidUIAutomator("UiSelector().index(3)").sendKeys("aaa");
+        Thread.sleep(5000);
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Enter amount\")").sendKeys(addBillAmount3);
+
+        //dr.findElementByAndroidUIAutomator("UiSelector().index(5)").sendKeys("19.6");
+        Thread.sleep(5000);
+       // dr.hideKeyboard();
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Add\")").click();
+        Thread.sleep(5000);
+
+        dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"Next\")").click();
+        
+        Thread.sleep(5000);
+        float temp1 = Float.parseFloat(addAccountBal);
+        float temp2 = Float.parseFloat(addBillAmount1);
+        float temp3 = Float.parseFloat(addBillAmount2);
+        float temp4 = Float.parseFloat(addBillAmount3);
+        float totalBillAmount = temp2 + temp3 + temp4;
+        float expectedAvlBal= temp1 -totalBillAmount;
+        Thread.sleep(5000);
+        String actualavlBal =  dr.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.support.v4.view.ViewPager/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[5]/android.widget.TextView[2]").getText();
+        String newString = actualavlBal.substring(1);
+        float actualBalfl = Float.parseFloat(newString);
+        if (expectedAvlBal == actualBalfl )
+        {
+     	   System.out.println("Actual Balance is equal to expected balance");
+        }
+        else
+        {
+     	   System.out.println("Actual Balance is NOT equal to expected balance");
+        }
+        
+    
+	}
+	
 	public void addBill(String addAccountBal, String addBillAmount) throws Exception {
         
     	dr.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

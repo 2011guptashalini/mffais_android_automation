@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="669.194" tests="4" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="964.225" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
     <property name="java.vm.version" value="25.171-b11"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\Kevin\testng-appium-app-browserstack-master - Copy\android"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\pc\Desktop\mffais_android_automation-master\mffais_android_automation-master"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\Kevin\testng-appium-app-browserstack-master - Copy\android"/>
+    <property name="user.dir" value="C:\Users\pc\Desktop\mffais_android_automation-master\mffais_android_automation-master"/>
     <property name="java.runtime.version" value="1.8.0_171-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_171\jre\lib\endorsed"/>
@@ -64,8 +64,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="test_01" classname="com.browserstack.suite.SuiteAddARecurrentPay" time="154.867"/>
-  <testcase name="test_01" classname="com.browserstack.suite.SuiteAddGoals" time="171.765"/>
-  <testcase name="test_01" classname="com.browserstack.suite.SuiteAddABillAndAPay" time="180.026"/>
-  <testcase name="test_01" classname="com.browserstack.suite.SuiteAddABill" time="162.536"/>
+  <testcase name="test_01" classname="com.browserstack.suite.SuiteAddARecurrentPay" time="148.697"/>
+  <testcase name="test_01" classname="com.browserstack.suite.SuiteAddABill" time="170.794"/>
+  <testcase name="test_01" classname="com.browserstack.suite.SuiteAddABillAndAPay" time="178.401"/>
+  <testcase name="test_01" classname="com.browserstack.suite.SuiteAddGoals" time="186.342"/>
+  <testcase name="test_01" classname="com.browserstack.suite.SuiteAddMultipleBills" time="279.991"/>
 </testsuite>

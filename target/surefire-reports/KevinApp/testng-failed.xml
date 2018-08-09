@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [KevinApp]" parallel="tests">
-  <parameter name="environment" value="galaxy_note4"/>
+  <parameter name="environment" value="galaxy_s8"/>
   <parameter name="config" value="suite.conf.json"/>
-  <test thread-count="3" name="TestGalaxyNote4" parallel="classes">
-    <parameter name="environment" value="galaxy_note4"/>
+  <test thread-count="5" name="TestGalaxy8" parallel="classes">
+    <parameter name="environment" value="galaxy_s8"/>
     <parameter name="config" value="suite.conf.json"/>
     <classes>
       <class name="com.browserstack.suite.SuiteAddABill"/>
       <class name="com.browserstack.suite.SuiteAddABillAndAPay"/>
       <class name="com.browserstack.suite.SuiteAddARecurrentPay"/>
       <class name="com.browserstack.suite.SuiteAddGoals"/>
+      <class name="com.browserstack.suite.SuiteAddMultipleBills"/>
     </classes>
-  </test> <!-- TestGalaxyNote4 -->
+  </test> <!-- TestGalaxy8 -->
 </suite> <!-- Failed suite [KevinApp] -->

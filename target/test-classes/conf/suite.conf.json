@@ -7,18 +7,16 @@
     "build": "testng-browserstack",
     "name": "suite_appium_test",
     "browserstack.debug": true,
-    "app": "bs://7ee208ce3fb7d69ad33616ddb78486dbd4adacfa"
+    "app": "bs://30b2ece32593024459f2f43ee7b0e9de10bcca54"
   },
 
   "environments": {
-    "pixel": {
-      "device": "Google Pixel"
-    },
-    "galaxy_s7": {
-      "device": "Samsung Galaxy S7"
+    "galaxy_s8": {
+      "device": "Samsung Galaxy S8"
     },
     "nexus_9": {
       "device": "Google Nexus 9"
+    }		
     }
   }
-}
+

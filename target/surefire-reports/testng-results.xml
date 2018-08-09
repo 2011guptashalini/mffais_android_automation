@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="KevinApp" duration-ms="452143" started-at="2018-08-08T08:04:16Z" finished-at="2018-08-08T08:11:48Z">
+  <suite name="KevinApp" duration-ms="334422" started-at="2018-08-09T11:23:12Z" finished-at="2018-08-09T11:28:47Z">
     <groups>
     </groups>
-    <test name="TestGalaxyNote4" duration-ms="452143" started-at="2018-08-08T08:04:16Z" finished-at="2018-08-08T08:11:48Z">
+    <test name="TestGalaxy8" duration-ms="334422" started-at="2018-08-09T11:23:12Z" finished-at="2018-08-09T11:28:47Z">
       <class name="com.browserstack.suite.SuiteAddARecurrentPay">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.suite.SuiteAddARecurrentPay@35f983a6]" name="setUp" is-config="true" duration-ms="54258" started-at="2018-08-08T13:34:16Z" finished-at="2018-08-08T13:35:11Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.suite.SuiteAddARecurrentPay@7f690630]" name="setUp" is-config="true" duration-ms="36346" started-at="2018-08-09T16:53:12Z" finished-at="2018-08-09T16:53:49Z">
           <params>
             <param index="0">
               <value>
@@ -16,24 +16,24 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[galaxy_note4]]>
+                <![CDATA[galaxy_s8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test_01()[pri:0, instance:com.browserstack.suite.SuiteAddARecurrentPay@35f983a6]" name="test_01" duration-ms="155937" started-at="2018-08-08T13:35:11Z" finished-at="2018-08-08T13:37:46Z">
+        <test-method status="PASS" signature="test_01()[pri:0, instance:com.browserstack.suite.SuiteAddARecurrentPay@7f690630]" name="test_01" duration-ms="155715" started-at="2018-08-09T16:53:49Z" finished-at="2018-08-09T16:56:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_01 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.browserstack.suite.SuiteAddARecurrentPay@35f983a6]" name="tearDown" is-config="true" duration-ms="11573" started-at="2018-08-08T13:37:46Z" finished-at="2018-08-08T13:37:58Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.browserstack.suite.SuiteAddARecurrentPay@7f690630]" name="tearDown" is-config="true" duration-ms="10975" started-at="2018-08-09T16:56:24Z" finished-at="2018-08-09T16:56:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.browserstack.suite.SuiteAddARecurrentPay -->
       <class name="com.browserstack.suite.SuiteAddABill">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.suite.SuiteAddABill@6442b0a6]" name="setUp" is-config="true" duration-ms="56431" started-at="2018-08-08T13:37:58Z" finished-at="2018-08-08T13:38:54Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.suite.SuiteAddABill@60f82f98]" name="setUp" is-config="true" duration-ms="40165" started-at="2018-08-09T16:53:12Z" finished-at="2018-08-09T16:53:52Z">
           <params>
             <param index="0">
               <value>
@@ -42,50 +42,24 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[galaxy_note4]]>
+                <![CDATA[galaxy_s8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test_01()[pri:1, instance:com.browserstack.suite.SuiteAddABill@6442b0a6]" name="test_01" duration-ms="162536" started-at="2018-08-08T13:38:54Z" finished-at="2018-08-08T13:41:37Z">
+        <test-method status="PASS" signature="test_01()[pri:1, instance:com.browserstack.suite.SuiteAddABill@60f82f98]" name="test_01" duration-ms="173976" started-at="2018-08-09T16:53:52Z" finished-at="2018-08-09T16:56:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_01 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.browserstack.suite.SuiteAddABill@6442b0a6]" name="tearDown" is-config="true" duration-ms="11378" started-at="2018-08-08T13:41:37Z" finished-at="2018-08-08T13:41:48Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.browserstack.suite.SuiteAddABill@60f82f98]" name="tearDown" is-config="true" duration-ms="11181" started-at="2018-08-09T16:56:46Z" finished-at="2018-08-09T16:56:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.browserstack.suite.SuiteAddABill -->
-      <class name="com.browserstack.suite.SuiteAddABillAndAPay">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.suite.SuiteAddABillAndAPay@60f82f98]" name="setUp" is-config="true" duration-ms="55327" started-at="2018-08-08T13:34:16Z" finished-at="2018-08-08T13:35:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[suite.conf.json]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[galaxy_note4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test_01()[pri:0, instance:com.browserstack.suite.SuiteAddABillAndAPay@60f82f98]" name="test_01" duration-ms="180026" started-at="2018-08-08T13:35:12Z" finished-at="2018-08-08T13:38:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_01 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.browserstack.suite.SuiteAddABillAndAPay@60f82f98]" name="tearDown" is-config="true" duration-ms="11380" started-at="2018-08-08T13:38:12Z" finished-at="2018-08-08T13:38:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.browserstack.suite.SuiteAddABillAndAPay -->
       <class name="com.browserstack.suite.SuiteAddGoals">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.suite.SuiteAddGoals@7f690630]" name="setUp" is-config="true" duration-ms="54572" started-at="2018-08-08T13:34:16Z" finished-at="2018-08-08T13:35:11Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.suite.SuiteAddGoals@edf4efb]" name="setUp" is-config="true" duration-ms="43358" started-at="2018-08-09T16:53:12Z" finished-at="2018-08-09T16:53:56Z">
           <params>
             <param index="0">
               <value>
@@ -94,22 +68,74 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[galaxy_note4]]>
+                <![CDATA[galaxy_s8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test_01()[pri:0, instance:com.browserstack.suite.SuiteAddGoals@7f690630]" name="test_01" duration-ms="172523" started-at="2018-08-08T13:35:11Z" finished-at="2018-08-08T13:38:03Z">
+        <test-method status="PASS" signature="test_01()[pri:0, instance:com.browserstack.suite.SuiteAddGoals@edf4efb]" name="test_01" duration-ms="186341" started-at="2018-08-09T16:53:56Z" finished-at="2018-08-09T16:57:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_01 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.browserstack.suite.SuiteAddGoals@7f690630]" name="tearDown" is-config="true" duration-ms="11285" started-at="2018-08-08T13:38:03Z" finished-at="2018-08-08T13:38:15Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.browserstack.suite.SuiteAddGoals@edf4efb]" name="tearDown" is-config="true" duration-ms="11279" started-at="2018-08-09T16:57:02Z" finished-at="2018-08-09T16:57:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.browserstack.suite.SuiteAddGoals -->
-    </test> <!-- TestGalaxyNote4 -->
+      <class name="com.browserstack.suite.SuiteAddABillAndAPay">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.suite.SuiteAddABillAndAPay@35f983a6]" name="setUp" is-config="true" duration-ms="38852" started-at="2018-08-09T16:53:12Z" finished-at="2018-08-09T16:53:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[suite.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[galaxy_s8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test_01()[pri:0, instance:com.browserstack.suite.SuiteAddABillAndAPay@35f983a6]" name="test_01" duration-ms="182909" started-at="2018-08-09T16:53:51Z" finished-at="2018-08-09T16:56:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.browserstack.suite.SuiteAddABillAndAPay@35f983a6]" name="tearDown" is-config="true" duration-ms="10934" started-at="2018-08-09T16:56:54Z" finished-at="2018-08-09T16:57:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.browserstack.suite.SuiteAddABillAndAPay -->
+      <class name="com.browserstack.suite.SuiteAddMultipleBills">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.browserstack.suite.SuiteAddMultipleBills@2f7a2457]" name="setUp" is-config="true" duration-ms="38437" started-at="2018-08-09T16:53:12Z" finished-at="2018-08-09T16:53:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[suite.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[galaxy_s8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test_01()[pri:0, instance:com.browserstack.suite.SuiteAddMultipleBills@2f7a2457]" name="test_01" duration-ms="284908" started-at="2018-08-09T16:53:51Z" finished-at="2018-08-09T16:58:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.browserstack.suite.SuiteAddMultipleBills@2f7a2457]" name="tearDown" is-config="true" duration-ms="11040" started-at="2018-08-09T16:58:36Z" finished-at="2018-08-09T16:58:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.browserstack.suite.SuiteAddMultipleBills -->
+    </test> <!-- TestGalaxy8 -->
   </suite> <!-- KevinApp -->
 </testng-results>
