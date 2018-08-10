@@ -7,10 +7,12 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 import com.browserstack.BrowserStackTestNGTest;
 
 public class AppKeyWords extends BrowserStackTestNGTest {
+	SoftAssert softAssertion = new SoftAssert();
 	
 public void addMultipleBill(String addAccountBal, String addBillAmount1, String addBillAmount2,String addBillAmount3) throws Exception {
         
@@ -121,14 +123,8 @@ public void addMultipleBill(String addAccountBal, String addBillAmount1, String 
         String actualavlBal =  dr.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.support.v4.view.ViewPager/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[5]/android.widget.TextView[2]").getText();
         String newString = actualavlBal.substring(1);
         float actualBalfl = Float.parseFloat(newString);
-        if (expectedAvlBal == actualBalfl )
-        {
-     	   System.out.println("Actual Balance is equal to expected balance");
-        }
-        else
-        {
-     	   System.out.println("Actual Balance is NOT equal to expected balance");
-        }
+        softAssertion.assertEquals((int)actualBalfl, (int)expectedAvlBal);
+        softAssertion.assertAll();
         
     
 	}
@@ -198,14 +194,8 @@ public void addMultipleBill(String addAccountBal, String addBillAmount1, String 
         String actualavlBal =  dr.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.support.v4.view.ViewPager/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[5]/android.widget.TextView[2]").getText();
         String newString = actualavlBal.substring(1);
         float actualBalfl = Float.parseFloat(newString);
-        if (expectedAvlBal == actualBalfl )
-        {
-     	   System.out.println("Actual Balance is equal to expected balance");
-        }
-        else
-        {
-     	   System.out.println("Actual Balance is NOT equal to expected balance");
-        }
+        softAssertion.assertEquals((int)actualBalfl, (int)expectedAvlBal);
+        softAssertion.assertAll();
         
     
 	}
@@ -272,14 +262,8 @@ public void addMultipleBill(String addAccountBal, String addBillAmount1, String 
         String actualavlBal =  dr.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.support.v4.view.ViewPager/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[5]/android.widget.TextView[2]").getText();
         String newString = actualavlBal.substring(1);
         float actualBalfl = Float.parseFloat(newString);
-        if (expectedAvlBal == actualBalfl )
-        {
-     	   System.out.println("Actual Balance is equal to expected balance");
-        }
-        else
-        {
-     	   System.out.println("Actual Balance is NOT equal to expected balance");
-        }
+        softAssertion.assertEquals((int)actualBalfl, (int)expectedAvlBal);
+        softAssertion.assertAll();
 	}
 	
 	public void addPayRecurrent(String addAccountBal, String addPay) throws InterruptedException{
@@ -328,20 +312,14 @@ public void addMultipleBill(String addAccountBal, String addBillAmount1, String 
         String actualavlBal =  dr.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.support.v4.view.ViewPager/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[5]/android.widget.TextView[2]").getText();
         String newString = actualavlBal.substring(1);
         float actualBalfl = Float.parseFloat(newString);
-        if (expectedAvlBal == actualBalfl )
-        {
-     	   System.out.println("Actual Balance is equal to expected balance");
-        }
-        else
-        {
-     	   System.out.println("Actual Balance is NOT equal to expected balance");
-        }
+        softAssertion.assertEquals((int)actualBalfl, (int)expectedAvlBal);
         Thread.sleep(5000);
         dr.findElementByAndroidUIAutomator("UiSelector().textMatches(\"FORECAST\")").click(); 
         Thread.sleep(5000);
         Boolean entry = dr.findElementByAndroidUIAutomator("UiSelector().text(\"Employee\")").isDisplayed();
-        Assert.assertTrue(entry,"There is no entry for recurring pay");
+        softAssertion.assertTrue(entry,"There is no entry for recurring pay");
         System.out.println("There are entries for recurring pay");
+        softAssertion.assertAll();
 	}
 	
 public void addGoal(String addAccountBal, String addGoalAmount,String payGoal) throws InterruptedException{
@@ -414,14 +392,9 @@ public void addGoal(String addAccountBal, String addGoalAmount,String payGoal) t
    
     String newString = remainbal1.substring(1);
     float actualRemainingBal = Float.parseFloat(newString);
-   
-  
-    if(expRemainingGoal==actualRemainingBal ){
-    System.out.println("Remaining Balance after payment is correct");
-    }
-    else{
-    System.out.println("Remaining Balance after payment is not correct");
-    }
+    softAssertion.assertEquals(actualRemainingBal, expRemainingGoal);
+    softAssertion.assertAll();
+    
     //target
      
     

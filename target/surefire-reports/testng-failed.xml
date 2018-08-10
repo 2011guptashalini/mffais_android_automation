@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [KevinApp]" parallel="tests">
-  <parameter name="environment" value="galaxy_s8"/>
+  <parameter name="environment" value="nexus_9"/>
   <parameter name="config" value="suite.conf.json"/>
   <test thread-count="5" name="TestGalaxy8" parallel="classes">
     <parameter name="environment" value="galaxy_s8"/>
@@ -14,4 +14,66 @@
       <class name="com.browserstack.suite.SuiteAddMultipleBills"/>
     </classes>
   </test> <!-- TestGalaxy8 -->
+  <test thread-count="5" name="nexus_9" parallel="classes">
+    <parameter name="environment" value="nexus_9"/>
+    <parameter name="config" value="suite.conf.json"/>
+    <classes>
+      <class name="com.browserstack.suite.SuiteAddABill"/>
+      <class name="com.browserstack.suite.SuiteAddABillAndAPay"/>
+      <class name="com.browserstack.suite.SuiteAddARecurrentPay"/>
+      <class name="com.browserstack.suite.SuiteAddGoals"/>
+      <class name="com.browserstack.suite.SuiteAddMultipleBills"/>
+    </classes>
+  </test> <!-- nexus_9 -->
+  <test name="nexus_9(failed)" parallel="classes">
+    <parameter name="environment" value="nexus_9"/>
+    <parameter name="config" value="suite.conf.json"/>
+    <classes>
+      <class name="com.browserstack.suite.SuiteAddGoals">
+        <methods>
+          <include name="test_01"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteAddGoals -->
+      <class name="com.browserstack.suite.SuiteAddABillAndAPay">
+        <methods>
+          <include name="test_01"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteAddABillAndAPay -->
+      <class name="com.browserstack.suite.SuiteAddMultipleBills">
+        <methods>
+          <include name="test_01"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteAddMultipleBills -->
+      <class name="com.browserstack.suite.SuiteAddABill">
+        <methods>
+          <include name="test_01"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteAddABill -->
+      <class name="com.browserstack.suite.SuiteAddARecurrentPay">
+        <methods>
+          <include name="test_01"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.suite.SuiteAddARecurrentPay -->
+    </classes>
+  </test> <!-- nexus_9(failed) -->
 </suite> <!-- Failed suite [KevinApp] -->
